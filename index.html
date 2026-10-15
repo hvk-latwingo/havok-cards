@@ -2,6 +2,13 @@
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Havok Cards</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#14110d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Havok Cards">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Lilita+One&display=swap" rel="stylesheet">
 <style>.c.sel{outline:5px solid #43d639;outline-offset:-3px;transform:scale(.95)}.shk{animation:shk .4s}@keyframes shk{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}.sbtn{display:block;width:100%;margin:6px 0}
 :root{--ink:#14110d;--bg:#fff3c9;--dot:#ffb30066;--gold:#ffc61a;--or:#ff8f00;--pk:#ff4081;--cy:#29b6f6;--gr:#43d639;--pn:#fff;--fg:#14110d;--mut:#7a6a4a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -708,4 +715,5 @@ for(const e of document.querySelectorAll("#zoom button,header button"))e.innerHT
 ui();render();
 if(window.HV&&HV.content&&HV.content.loaded)applyContent();
 </script>
-<script src="live.js"></script></body></html>
+<script src="live.js"></script>
+<script>if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})</script></body></html>
